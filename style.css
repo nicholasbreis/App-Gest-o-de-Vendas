@@ -1,0 +1,113 @@
+body {
+    background-image: url("img/imgfundologin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.login {
+    border: 1px hidden rgb(232, 244, 255);
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    top: 200px;
+    left: 800px;
+    background-color: rgba(223, 238, 250, 0.5);
+    backdrop-filter: blur(2px);
+}   
+
+
+
+.nome img {
+    color: rgb(2, 1, 1);
+    font-size: 25px;
+    position: relative;
+    padding: 10px;
+    width: 35px;
+    height: 29px;
+    bottom: -235px;
+    left: 50px;
+}
+
+.senha img {
+   color: white;
+   position: relative;
+   width: 35px;
+   height: 29px;
+   right: 208px;
+   bottom: -282px;
+}
+
+.input-text {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    position: relative;
+    font-size: 15px;
+    left: 40px;
+    bottom: -215px;
+}
+
+.input-senha {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    position: relative;
+    left: 99px;
+    bottom: -237px;
+    font-size: 15px;
+}
+
+button {
+    background-color: #3b9171;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px #000000;
+    position: absolute;
+    bottom: 0;
+    margin: 40px 40px 40px -30px;
+    width: 120px;
+    height: 60px;
+    font-size: 20px;
+    left: 170px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lembrete {
+    color: #e4ebf1;
+    position: relative;
+    bottom: -280px;
+    left: -114px;
+    font-size: small;
+}
+
+.cadastro {
+    color: #ffffff;
+    position: relative;
+    bottom: -400px;
+    left: 0px;
+    text-decoration: none;  
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.avatar img {
+    position: relative;
+    bottom: 40px;
+    left: 140px;
+    width: 120px;
+    height: 120px;
+}
+
+
