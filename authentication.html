@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+</head>
+<body>
+    <div class="login-box">
+        <form id="loginForm">
+            <label class="nome" for="nome"><img src="img/silueta login.png"></label><br>
+            <input class="input-email" type="text" placeholder="Insira seu e-mail" name="input-email" required>
+            
+            <label class="avatar" for="avatar"><img src="img/1287507_user_account_avatar_human_people_icon.png"></label>
+
+            <label class="figsenha" for="password"><img src="img/chave login.png"></label><br>
+            <input class="input-senha" type="password" placeholder="Insira a senha" name="input-senha" required><br>
+            
+            <button type="button" onclick='login()'>Entrar</button>
+            
+        </form>
+    </div>
+<script>
+
+    function login() {
+        console.log("nome de usuario ou senha incorreto")
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "connect.php", true);
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.onreadysta  = function() {
+            if  (xhr.status === 4 && xhr.status === 200) {
+                if (xhr.responseText.trim() === "sucess") {
+                    window.location.href = "index.php";
+                } else {
+                    alert("nome de usuario ou senha incorreto")
+                }
+            }
+        };
+        xhr.send("username=" + username + "&password=" + password);
+    }
+
+
+
+</script>
+</img>
+</body>
+</html>
